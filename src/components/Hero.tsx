@@ -37,7 +37,7 @@ export default function Hero() {
           href="https://t.me/"
           className="inline-block bg-white text-black px-8 py-3 text-sm uppercase tracking-wide font-semibold hover:bg-neutral-200 transition-colors duration-300"
         >
-          Открыть бот
+          Пиши нам!
         </a>
       </div>
     </div>
