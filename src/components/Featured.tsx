@@ -1,11 +1,11 @@
 const games = [
-  { name: "Brawl Stars", desc: "Гемы, Brawl Pass, скины" },
-  { name: "Clash of Clans", desc: "Самоцветы, ресурсы" },
-  { name: "PUBG Mobile", desc: "UC, Royale Pass" },
-  { name: "Genshin Impact", desc: "Примогемы, Welkin Moon" },
-  { name: "Free Fire", desc: "Алмазы, пропуски" },
-  { name: "Roblox", desc: "Robux, Premium" },
-  { name: "Clash Royale", desc: "Гемы, Pass Royale" },
+  { name: "Brawl Stars", desc: "Гемы" },
+  { name: "PUBG Mobile", desc: "UC" },
+  { name: "Free Fire", desc: "Алмазы" },
+  { name: "Clash Royale", desc: "Гемы" },
+  { name: "Clash of Clans", desc: "Самоцветы" },
+  { name: "Genshin Impact", desc: "Примогемы" },
+  { name: "Roblox", desc: "Робуксы" },
 ];
 
 export default function Featured() {
