@@ -1,19 +1,27 @@
 const games = [
-  { name: "Brawl Stars", desc: "Гемы" },
-  { name: "PUBG Mobile", desc: "UC" },
-  { name: "Free Fire", desc: "Алмазы" },
-  { name: "Clash Royale", desc: "Гемы" },
-  { name: "Clash of Clans", desc: "Самоцветы" },
-  { name: "Genshin Impact", desc: "Примогемы" },
-  { name: "Roblox", desc: "Робуксы" },
+  { name: "Brawl Stars", desc: "Гемы", id: "brawl" },
+  { name: "PUBG Mobile", desc: "UC", id: "pubg" },
+  { name: "Free Fire", desc: "Алмазы", id: "freefire" },
+  { name: "Clash Royale", desc: "Гемы", id: "cr" },
+  { name: "Clash of Clans", desc: "Самоцветы", id: "coc" },
+  { name: "Genshin Impact", desc: "Примогемы", id: "genshin" },
+  { name: "Roblox", desc: "Робуксы", id: "roblox" },
 ];
 
-export default function Featured() {
+interface FeaturedProps {
+  onGameClick: (gameId: string) => void;
+}
+
+export default function Featured({ onGameClick }: FeaturedProps) {
   return (
     <div id="prices" className="flex flex-col lg:flex-row lg:justify-between lg:items-center min-h-screen px-6 py-12 lg:py-0 bg-white">
       <div className="flex-1 h-[400px] lg:h-[800px] mb-8 lg:mb-0 lg:order-2 grid grid-cols-2 gap-4 content-center px-4">
         {games.map((game) => (
-          <div key={game.name} className="border border-neutral-200 p-5 hover:border-neutral-900 transition-colors duration-300">
+          <div
+            key={game.name}
+            onClick={() => onGameClick(game.id)}
+            className="border border-neutral-200 p-5 hover:border-neutral-900 transition-colors duration-300 cursor-pointer"
+          >
             <p className="font-bold text-neutral-900 mb-1">{game.name}</p>
             <p className="text-sm text-neutral-500">{game.desc}</p>
           </div>

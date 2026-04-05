@@ -1,4 +1,4 @@
-import { useState } from "react";
+
 
 const games = [
   {
@@ -114,9 +114,13 @@ const games = [
   },
 ];
 
-export default function Prices() {
-  const [active, setActive] = useState("pubg");
-  const game = games.find((g) => g.id === active)!;
+interface PricesProps {
+  activeGame: string;
+  onGameChange: (id: string) => void;
+}
+
+export default function Prices({ activeGame, onGameChange }: PricesProps) {
+  const game = games.find((g) => g.id === activeGame) ?? games[0];
 
   return (
     <div className="bg-neutral-950 py-24 px-6">
@@ -128,9 +132,9 @@ export default function Prices() {
           {games.map((g) => (
             <button
               key={g.id}
-              onClick={() => setActive(g.id)}
+              onClick={() => onGameChange(g.id)}
               className={`px-4 py-2 text-sm uppercase tracking-wide border transition-colors duration-300 ${
-                active === g.id
+                activeGame === g.id
                   ? "bg-white text-black border-white"
                   : "bg-transparent text-neutral-400 border-neutral-700 hover:border-neutral-400 hover:text-white"
               }`}

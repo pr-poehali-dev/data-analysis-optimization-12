@@ -1,3 +1,4 @@
+import { useRef, useState } from "react";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Featured from "@/components/Featured";
@@ -8,13 +9,23 @@ import Promo from "@/components/Promo";
 import Footer from "@/components/Footer";
 
 const Index = () => {
+  const pricesRef = useRef<HTMLDivElement>(null);
+  const [activeGame, setActiveGame] = useState("pubg");
+
+  const handleGameClick = (gameId: string) => {
+    setActiveGame(gameId);
+    pricesRef.current?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <main className="min-h-screen">
       <Header />
       <Hero />
-      <Featured />
+      <Featured onGameClick={handleGameClick} />
       <Stars />
-      <Prices />
+      <div ref={pricesRef}>
+        <Prices activeGame={activeGame} onGameChange={setActiveGame} />
+      </div>
       <HowTo />
       <Promo />
       <Footer />
