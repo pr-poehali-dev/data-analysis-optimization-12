@@ -5,6 +5,7 @@ import Featured from "@/components/Featured";
 import Stars from "@/components/Stars";
 import Prices from "@/components/Prices";
 import HowTo from "@/components/HowTo";
+import FAQ from "@/components/FAQ";
 import Promo from "@/components/Promo";
 import Footer from "@/components/Footer";
 
@@ -27,6 +28,7 @@ const Index = () => {
         <Prices activeGame={activeGame} onGameChange={setActiveGame} />
       </div>
       <HowTo />
+      <FAQ />
       <Promo />
       <Footer />
     </main>
