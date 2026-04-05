@@ -31,7 +31,15 @@ export default function Stars() {
                   rel="noopener noreferrer"
                   className="border border-neutral-600 text-neutral-300 px-4 py-2 text-sm uppercase tracking-wide hover:border-white hover:text-white transition-colors duration-300"
                 >
-                  Заказать
+                  Telegram
+                </a>
+                <a
+                  href="https://vk.com/fazdinovvv"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="border border-neutral-600 text-neutral-300 px-4 py-2 text-sm uppercase tracking-wide hover:border-white hover:text-white transition-colors duration-300"
+                >
+                  ВКонтакте
                 </a>
               </div>
             </div>
