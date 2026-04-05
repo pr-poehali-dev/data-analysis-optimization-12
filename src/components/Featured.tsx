@@ -5,6 +5,7 @@ const games = [
   { name: "Genshin Impact", desc: "Примогемы, Welkin Moon" },
   { name: "Free Fire", desc: "Алмазы, пропуски" },
   { name: "Roblox", desc: "Robux, Premium" },
+  { name: "Clash Royale", desc: "Гемы, Pass Royale" },
 ];
 
 export default function Featured() {
