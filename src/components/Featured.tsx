@@ -23,12 +23,20 @@ export default function Featured() {
         <p className="text-2xl lg:text-4xl mb-8 text-neutral-900 leading-tight">
           Донаты для мобильных и ПК игр — пополняем за считанные минуты после оплаты
         </p>
-        <a
-          href="https://t.me/fazdinovvv"
-          className="bg-black text-white border border-black px-4 py-2 text-sm transition-all duration-300 hover:bg-white hover:text-black w-fit uppercase tracking-wide"
-        >
-          Заказать в Telegram
-        </a>
+        <div className="flex flex-col sm:flex-row gap-3">
+          <a
+            href="https://t.me/fazdinovvv"
+            className="bg-black text-white border border-black px-4 py-2 text-sm transition-all duration-300 hover:bg-white hover:text-black w-fit uppercase tracking-wide"
+          >
+            Telegram
+          </a>
+          <a
+            href="https://vk.com/fazdinovvv"
+            className="bg-white text-black border border-black px-4 py-2 text-sm transition-all duration-300 hover:bg-black hover:text-white w-fit uppercase tracking-wide"
+          >
+            ВКонтакте
+          </a>
+        </div>
       </div>
     </div>
   );
