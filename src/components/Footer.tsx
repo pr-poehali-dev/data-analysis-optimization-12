@@ -16,9 +16,9 @@ export default function Footer() {
               </div>
               <div className="flex flex-col gap-1 sm:gap-2">
                 <h3 className="mb-1 sm:mb-2 uppercase text-neutral-400 text-xs sm:text-sm">Контакты</h3>
-                <a href="https://t.me/" className="text-white hover:text-neutral-400 transition-colors duration-300 text-sm sm:text-base">Telegram</a>
-                <a href="https://t.me/" className="text-white hover:text-neutral-400 transition-colors duration-300 text-sm sm:text-base">Поддержка</a>
-                <a href="https://t.me/" className="text-white hover:text-neutral-400 transition-colors duration-300 text-sm sm:text-base">Заказать</a>
+                <a href="https://t.me/fazdinovvv" className="text-white hover:text-neutral-400 transition-colors duration-300 text-sm sm:text-base">Telegram</a>
+                <a href="https://t.me/fazdinovvv" className="text-white hover:text-neutral-400 transition-colors duration-300 text-sm sm:text-base">Поддержка</a>
+                <a href="https://t.me/fazdinovvv" className="text-white hover:text-neutral-400 transition-colors duration-300 text-sm sm:text-base">Заказать</a>
               </div>
             </div>
             <div className="flex flex-col sm:flex-row justify-between items-start sm:items-end gap-4 sm:gap-0">

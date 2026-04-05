@@ -34,7 +34,7 @@ export default function Hero() {
           Пополнение игровых аккаунтов и покупка внутриигровых ресурсов — быстро, безопасно, через Telegram
         </p>
         <a
-          href="https://t.me/"
+          href="https://t.me/fazdinovvv"
           className="inline-block bg-white text-black px-8 py-3 text-sm uppercase tracking-wide font-semibold hover:bg-neutral-200 transition-colors duration-300"
         >
           Пиши нам!

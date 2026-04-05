@@ -15,7 +15,7 @@ export default function Header({ className }: HeaderProps) {
             Прайс
           </a>
           <a
-            href="https://t.me/"
+            href="https://t.me/fazdinovvv"
             className="text-white hover:text-neutral-400 transition-colors duration-300 uppercase text-sm"
           >
             Telegram

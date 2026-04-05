@@ -24,7 +24,7 @@ export default function Featured() {
           Донаты для мобильных и ПК игр — пополняем за считанные минуты после оплаты
         </p>
         <a
-          href="https://t.me/"
+          href="https://t.me/fazdinovvv"
           className="bg-black text-white border border-black px-4 py-2 text-sm transition-all duration-300 hover:bg-white hover:text-black w-fit uppercase tracking-wide"
         >
           Заказать в Telegram
